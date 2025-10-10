@@ -1,0 +1,68 @@
+/*Header*/
+
+
+
+
+/*-------------------------------------*/
+/*Footer*/
+
+
+
+
+/*-------------------------------------*/
+
+
+.div_cima{
+    width: 100%;
+    height: 30vw;
+    border: 2px solid red;
+    display: flex;
+    text-align: center;
+}
+
+.foto_cima{
+ width: 100%;
+ height: 30vw;
+ 
+}
+
+.logo_cima{
+    position: absolute;
+    height: 20%;
+    margin-left: 13%;
+    margin-top: 4%;
+}
+
+
+/*--------------------*/
+
+.menu{
+    width: 100%;
+    height: 9em;
+    border: 2px black solid;
+    margin-top: 0.5em;
+    text-align: center;
+    display:inline-block;
+}
+
+.menu_cima{
+    text-align: left;
+    width: 12%;
+    height: 2em;
+    border: 2px rgb(55, 0, 255) solid;
+    margin-left: 26%;
+}
+
+.sub_titulo{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 0px;
+}
+
+.menu_baixo{
+    width: 20%;
+    height: 2em;
+    border: 2px brown solid;
+}
