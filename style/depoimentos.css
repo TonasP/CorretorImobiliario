@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+/*header*/
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #047857;
+}
+
+header img {
+    width: 15%;
+    margin-left: 10%;
+}
+
+.links_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    margin-left: 8%;
+}
+
+.links_header a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans';
+    font-weight: bold 700;
+}
+
+#atual {
+    background-color: #1e3a3a;
+    border-radius: 4px;
+    padding: .6em;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.footer img {
+    width: 180px;
+    border-radius: 8px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+.footer li {
+    margin: 0.3rem 0;
+}
+
+.redes-sociais-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.redes-sociais-footer h3 {
+    color: #0077cc;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.redes-sociais-footer .icones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.redes-sociais-footer img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.redes-sociais-footer img:hover {
+    transform: scale(1.15);
+    opacity: 0.85;
+}
+
+.footer p {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/*depoimentos*/
+.depoimentos {
+    height: 100%;
+    background-color: #dfdfdf;
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.depoimentos h1 {
+    text-align: center;
+}
+
+.perfil img {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50px;
+    margin-right: 1.5%;
+}
+
+.star img {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50px;
+    margin-right: 1.5%;
+}
+
+.depoimento {
+    display: flex;
+    width: 30%;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    padding: 1em;
+}
