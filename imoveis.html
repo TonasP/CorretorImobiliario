@@ -8,19 +8,30 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
 
     <title>Imovéis</title>
 </head>
 
 <body>
 
-
+<header>
+        <img src="assets/logo_sem_fundo.png" alt="logo da imobiliaria">
+        <div class="links_header">
+            <a href="index.html" id="atual">Inicio</a>
+            <a href="imoveis.html">Imoveis</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobreMim.html">Sobre mim</a>
+            <a href="depoimentos.html">Depoimentos</a>
+        </div>
+    </header>
 
 
 
     <div class="div_cima">
-        <img class="foto_cima" src="assets/ab3272df-1108-481e-ac51-8e3cb955d423.jpg">
+        <img class="foto_cima" src="assets/imagem_cima.jpg">
 
     </div>
 
@@ -29,18 +40,69 @@
             <p class="sub_titulo">Encontre seu imóvel ideal</p>
         </div>
 
-        <label class="label">Tipo do Imóvel</label>
-<select class="input">
-<option>Selecione</option>
-<option>Apartamento</option>
-<option>Casa</option>
-<option>Terreno</option>
-</select>
+        <div class="blocos">
+
+
+            <div class="select_cima">
+                <label class="label">Tipo do Imóvel</label>
+                <select class="input">
+
+                    <option>Apartamento</option>
+                    <option>Casa</option>
+                    <option>Terreno</option>
+                </select>
+            </div>
+
+
+            <div class="select_cima">
+                <label class="label">Selcione a cidade</label>
+
+                <select class="input">
+                    <option>Taquara</option>
+                    <option>Parobé</option>
+                    <option>Igrejinha</option>
+                    <option>Gramado</option>
+                </select>
+            </div>
+
+            <div class="select_cima">
+                <label class="label">Valor máximo</label>
+                <input type="text" placeholder="0,00" inputmode="numeric" class="texto_valor">
+            </div>
+
+            <div class="select_cima">
+                <label class="label">Valor Mínimo</label>
+                <input type="text" placeholder="0,00" inputmode="numeric" class="texto_valor">
+            </div>
+
+            <div class="pesquisar">
+                <img class="luneta" src="assets/search (1).png">
+                <p class="pesquisa">Pesquisar</p>
+            </div>
+
+
+        </div>
     </div>
 
 
 
 
+    <footer class="footer">
+        <img src="assets/logo.jpeg" alt="logo">
+        <ul>
+            <li><strong>Endereço:</strong> Rua qualquer, 123 — Centro, Taquara/RS</li>
+            <li><strong>E-mail:</strong> contato@empurraqentra.com</li>
+            <li><strong>Telefone:</strong> (51) 6969-6969</li>
+
+        </ul>
+        <div class="redes-sociais-footer">
+            <h3>Nossas redes:</h3>
+            <a href="#" target="_blank"><img src="assets/whats.jpeg" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="assets/insta.jpeg" alt="WhatsApp"></a>
+            <a href="#" target="_blank"><img src="assets/facebook.jpeg" alt="Facebook"></a>
+        </div>
+        <p>2025 Empurra que entra — Direitos reservados.</p>
+    </footer>
 
 </body>
 

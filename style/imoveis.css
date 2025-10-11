@@ -1,18 +1,110 @@
 /*Header*/
 
-
+html{
+    font-family: 'Open Sans';
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #047857;
+}
+header img{
+    width: 10%;
+    margin-left: 10%;
+}
+.links_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    margin-left: 13%;
+    font-weight: 600;
+    font-size: .9vw;
+}
+.links_header a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+#atual{
+    background-color: #1e3a3a;
+    border-radius: 4px;
+    padding: .6em;
+}
 
 
 /*-------------------------------------*/
 /*Footer*/
 
+.footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
 
+.footer img {
+  width: 180px;
+  border-radius: 8px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.footer li {
+  margin: 0.3rem 0;
+}
+
+.redes-sociais-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.redes-sociais-footer h3 {
+  color: #0077cc;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.redes-sociais-footer .icones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.redes-sociais-footer img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.redes-sociais-footer img:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+
+.footer p {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #777;
+}
 
 
 /*-------------------------------------*/
 
 
-.div_cima{
+.div_cima {
     width: 100%;
     height: 30vw;
     border: 2px solid red;
@@ -20,13 +112,13 @@
     text-align: center;
 }
 
-.foto_cima{
- width: 100%;
- height: 30vw;
- 
+.foto_cima {
+    width: 100%;
+    height: 30vw;
+
 }
 
-.logo_cima{
+.logo_cima {
     position: absolute;
     height: 20%;
     margin-left: 13%;
@@ -36,33 +128,120 @@
 
 /*--------------------*/
 
-.menu{
+.menu {
     width: 100%;
-    height: 9em;
-    border: 2px black solid;
+    height: 15em;
+    border: 2px rgb(0, 0, 0) solid;
     margin-top: 0.5em;
-    text-align: center;
-    display:inline-block;
 }
 
-.menu_cima{
+.blocos{
+    width: 80%;
+    height: 6em;
+    /* border: 2px indigo solid; */
+    display: flex;
+    gap: 20px;
+    margin-top: 1em;
+    margin-left: 20%;
+   
+}
+
+.menu_cima {
     text-align: left;
-    width: 12%;
-    height: 2em;
-    border: 2px rgb(55, 0, 255) solid;
-    margin-left: 26%;
-}
-
-.sub_titulo{
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  margin-top: 0px;
-}
-
-.menu_baixo{
     width: 20%;
     height: 2em;
-    border: 2px brown solid;
+    /* border: 2px rgb(55, 0, 255) solid; */
+    margin-left: 20%;
+}
+
+.sub_titulo {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 0px;
+    font-size: 1vw;
+}
+
+.menu_baixo {
+    width: 20%;
+    height: 2em;
+    /* border: 2px brown solid; */
+}
+
+/*-------------------*/
+
+.label {
+    width: 97%;
+    height: 1em;
+    /* border: 2px yellow solid; */
+    text-align: left;
+    font-size: 1vw;
+    margin-bottom: 0.5em;
+}
+
+.input,
+select {
+    width: 70%;
+    height: 2em;
+    /* border: 2px seagreen solid; */
+    font-size: 0.8vw;
+    border-radius: 20px;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.select_cima {
+    width: 15%;
+    height: 5em;
+    /* border: 2px gray solid; */
+    display: flex;
+    
+
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.texto_valor{
+    height: 2em;
+
+        font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.8vw;
+    
+}
+
+.pesquisar{
+    width: 15%;
+    height: 5em;
+    /* border: 2px rgb(187, 255, 0) solid; */
+    display: flex;
+    /* background-color: black; */
+}
+
+.pesquisa{
+     flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /* color: rgb(0, 0, 0); */
+    font-size: 1.5vw;
+    margin-top:8%;
+}
+
+.luneta{
+    width: 20%;
+    height: 3em;
+    margin-left: 3em;
+    margin-top: 1em;
+    color: white;
 }
