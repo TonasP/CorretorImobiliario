@@ -5,6 +5,10 @@
     font-family: "Inter", Arial, sans-serif;
 }
 
+html {
+    font-family: 'Open Sans';
+}
+
 /*header*/
 header {
     display: flex;
@@ -108,33 +112,72 @@ header img {
     height: 100%;
     background-color: #dfdfdf;
     display: flex;
-    padding: 1em;
+    padding: 50px 20px;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px
 }
 
 .depoimentos h1 {
+    width: 100%;
     text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+    color: #222;
+}
+
+.depoimento1 p,
+.depoimento2 p,
+.depoimento3 p,
+.depoimento4 p,
+.depoimento5 p,
+.depoimento6 p {
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #444;
+}
+
+.depoimento1 h3,
+.depoimento2 h3,
+.depoimento3 h3,
+.depoimento4 h3,
+.depoimento5 h3,
+.depoimento6 h3 {
+    font-size: 1.1em;
+    font-weight: 700;
+    /* Deixa o nome em destaque (negrito) */
+    /* Reduz a margem entre o nome e as estrelas */
+    margin-bottom: 5px;
+    margin-top: 0;
 }
 
 .perfil img {
-    width: 3vw;
-    height: 3vw;
+    width: 5vw;
+    height: 5vw;
     border-radius: 50px;
     margin-right: 1.5%;
 }
 
 .star img {
-    width: 1vw;
-    height: 1vw;
-    border-radius: 50px;
-    margin-right: 1.5%;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0 2px;
 }
 
-.depoimento {
-    display: flex;
+.depoimento1,
+.depoimento2,
+.depoimento3,
+.depoimento4,
+.depoimento5,
+.depoimento6 {
+    flex-direction: column;
     width: 30%;
+    min-width: 300px;
+    height: auto;
+    min-height: 290px;
     background-color: #f1f1f1;
-    border-radius: 30px;
-    padding: 1em;
+    border-radius: 12px;
+    padding: 1.5em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
