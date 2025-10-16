@@ -8,7 +8,7 @@
 header {
     display: flex;
     flex-direction: row;
-    background-color: #dfdfdf;
+    background-color: #047857;
 }
 
 header img {    
@@ -50,7 +50,7 @@ body {
 
 .contato-intro h1 {
     font-size: 2rem;
-    color: #1e3a3a;
+    color: #047857;
     margin-bottom: 0.5rem;
 }
 
@@ -93,14 +93,14 @@ textarea {
 input:focus,
 textarea:focus {
     outline: none;
-    border-color: #8BC34A;
+    border-color: #047857;
     box-shadow: 0 0 3px rgba(0, 119, 204, 0.3);
 }
 
 .btn-enviar {
     width: 100%;
     padding: 0.8rem;
-    background-color: #8BC34A;
+    background-color: #047857;
     color: #fff;
     font-size: 1rem;
     border: none;
@@ -110,7 +110,7 @@ textarea:focus {
 }
 
 .btn-enviar:hover {
-    background-color: #8BC34A;
+    background-color: #047857;
 }
 
 .info-contato {
@@ -122,7 +122,7 @@ textarea:focus {
 }
 
 .info-contato h2 {
-    color: #8BC34A;
+    color: #047857;
     margin-bottom: 1rem;
 }
 
@@ -157,15 +157,17 @@ textarea:focus {
 }
 
 .mapa h2 {
-    color: #1e3a3a;
+    color: #047857;
     margin-bottom: 1rem;
+    font-size: 2rem;
+
 }
 
 .mapa iframe {
     width: 90%;
     max-width: 900px;
     height: 400px;
-    border:#8BC34A;
+    border:#047857;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
