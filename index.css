@@ -83,6 +83,10 @@ header img {
 
 }
 
+.figure {
+  position: relative;
+}
+
 .cards {
   animation: myAnim .6s linear 0s 1 normal none;
 }
@@ -93,7 +97,8 @@ header img {
   margin-top: 5%;
   gap: 5%;
 }
-.section_title{
+
+.section_title {
   color: #047857;
 }
 
@@ -103,6 +108,8 @@ header img {
   position: relative;
   box-shadow: 0px 0px 8px 0px #000000;
   transition: .2s;
+  display: flex;
+  flex-direction: column;
 }
 
 .cat_imovel:hover {
@@ -154,13 +161,23 @@ header img {
 }
 
 .cat_imovel_destaque_text {
-  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 45%;
-  left: 60%;
-  top: 80%;
+
+  background-color: #1e3a3aad;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+
+
+  top: auto;
+  transform: none;
+  gap: 0;
 
 }
 
@@ -168,16 +185,18 @@ header img {
   margin-bottom: 6%;
   width: 10%;
   text-align: center;
+  font-size: .9vw;
 }
 
 .cat_imovel_destaque_text p {
-  background-color: #1e3a3ad5;
+  background-color: #1e3a3a;
   padding: .8em;
 }
 
 .valor_imovel {
   display: flex;
   align-self: start;
+  font-size: .9vw;
 }
 
 .descricao {
@@ -186,6 +205,7 @@ header img {
   justify-content: center;
   align-items: center;
   background-color: #D4BDAC;
+  flex-grow: 1;
 }
 
 .footer {
@@ -263,32 +283,48 @@ header img {
     transform: translateX(0);
   }
 }
-@media (max-width: 1830px) {
 
-  
+@media (max-width:1280px) {
+  .cat_imovel_text {
+    font-size: 1.6vw;
+  }
+
+  .cat_imovel_text h3 {
+    font-size: 2vw;
+  }
+
+  .cat_imovel_destaque_text h3 {
+    font-size: 1.3vw;
+  }
 }
 
 @media (max-width: 1024px) {
-    .links_header {
-        /* Conforme solicitado, o header não foi alterado, mas se precisar,
-           pode diminuir o 'gap' ou o 'margin-left' aqui. */
-    }
 
-    .image_buttons a {
-        padding: 1em 4em; /* Diminui o padding dos botões */
-        font-size: 1.35vw;
-    }
 
-    .cat_imovel {
-        width: 28%; /* Aumenta um pouco a largura dos cards para não ficarem tão pequenos */
-    }
+  .image_buttons a {
+    margin: 0 1em;
+    padding: 1em 4em;
+    /* Diminui o padding dos botões */
+    font-size: 1.7vw;
+  }
 
-    .cat_imovel_text {
-        font-size: 1.2vw; /* Mantém o texto legível */
-    }
-    .cat_imovel_text h3{
-        font-size: 1.8vw;
-    }
+  .cat_imovel {
+    width: 28%;
+    /* Aumenta um pouco a largura dos cards para não ficarem tão pequenos */
+  }
+
+  .cat_imovel_text {
+    font-size: 2vw;
+    /* Mantém o texto legível */
+  }
+
+  .cat_imovel_text h3 {
+    font-size: 2vw;
+  }
+
+  .valor_imovel {
+    font-size: 1.5vw;
+  }
 }
 
 
@@ -297,76 +333,114 @@ header img {
    - Transforma layouts de múltiplas colunas em uma única coluna.
    -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
-    /* --- Seção da Imagem Principal --- */
-    .image_buttons {
-        display: flex;
-        flex-direction: column; /* Empilha os botões verticalmente */
-        gap: 1.1rem; /* Adiciona espaço entre eles */
-        width: 70%; /* Garante que os botões não fiquem muito largos */
-        align-items: center;
-    }
 
-    .image_buttons a {
-        width: 50%; /* Faz os botões ocuparem a largura do container */
-        padding: 2% 1%; /* Ajusta o padding para o novo layout */
-        font-size: 2.3vw;
-        margin: 0; /* Remove as margens laterais */
-        text-align: center; /* Centraliza o texto */
+  /* --- Seção da Imagem Principal --- */
+  .background_image {
+    min-height: 250px
+  }
 
-    }
+  .background_image img {
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-    /* --- Seção de Cards (Categorias e Destaques) --- */
-    .categorias,
-    .container_cards {
-        flex-direction: column; /* Empilha os cards verticalmente */
-        align-items: center; /* Centraliza os cards empilhados */
-        gap: 2.5rem; /* Adiciona um espaço vertical entre os cards */
-    }
+  .image_buttons {
+    display: flex;
+    flex-direction: column;
+    /* Empilha os botões verticalmente */
+    gap: 1.1rem;
+    /* Adiciona espaço entre eles */
+    width: 70%;
+    /* Garante que os botões não fiquem muito largos */
+    align-items: center;
+  }
 
-    .cat_imovel {
-        width: 80%; /* Os cards agora ocupam mais espaço na tela */
-        max-width: 400px; /* Limita a largura máxima para não ficar exagerado */
-    }
-    .cat_imovel:hover{
-        transform: scale(1.05); /* Diminui um pouco o efeito de hover */
-    }
-    
-    .cat_imovel_text{
-        font-size: 2.5vw; /* Aumenta a fonte para telas menores */
-    }
-    .cat_imovel_text h3{
-        font-size: 4vw;
-    }
-    
-    .destaques h1 {
-        margin-bottom: 1rem; /* Adiciona um respiro abaixo do título */
-        font-size: 1.8rem;
-    }
-    
-    /* Ajuste específico para o texto do card de destaque */
-    .cat_imovel_destaque_text {
-        position: absolute;
-        bottom: 0; /* Posiciona na base da imagem */
-        top: auto; /* Reseta o 'top' */
-        left: 0;
-        right: 0;
-        transform: none; /* Reseta a transformação */
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between; /* Distribui o espaço entre os itens */
-        align-items: center;
-        gap: 0; /* Reseta o gap */
-        padding: 0.5em;
-        box-sizing: border-box; /* Garante que o padding não quebre o layout */
-    }
-    .categoria_disponibilidade {
-        margin: 0;
-        width: auto;
-    }
-    .cat_imovel_destaque_text p {
-        padding: 0.5em;
-        font-size: 0.9rem;
-    }
+  .image_buttons a {
+    width: 50%;
+    /* Faz os botões ocuparem a largura do container */
+    padding: 2% 1%;
+    /* Ajusta o padding para o novo layout */
+    font-size: 2.3vw;
+    margin: 0;
+    /* Remove as margens laterais */
+    text-align: center;
+    /* Centraliza o texto */
+
+  }
+
+  /* --- Seção de Cards (Categorias e Destaques) --- */
+  .categorias,
+  .container_cards {
+    flex-direction: column;
+    /* Empilha os cards verticalmente */
+    align-items: center;
+    /* Centraliza os cards empilhados */
+    gap: 2.5rem;
+    /* Adiciona um espaço vertical entre os cards */
+  }
+
+  .cat_imovel {
+    width: 80%;
+    /* Os cards agora ocupam mais espaço na tela */
+    max-width: 400px;
+    /* Limita a largura máxima para não ficar exagerado */
+  }
+
+  .cat_imovel:hover {
+    transform: scale(1.05);
+    /* Diminui um pouco o efeito de hover */
+  }
+
+  .cat_imovel_text {
+    font-size: 2.5vw;
+    /* Aumenta a fonte para telas menores */
+  }
+
+  .cat_imovel_text h3 {
+    font-size: 4vw;
+  }
+
+  .destaques h1 {
+    margin-bottom: 1rem;
+    /* Adiciona um respiro abaixo do título */
+    font-size: 1.8rem;
+  }
+
+  /* Ajuste específico para o texto do card de destaque */
+  .cat_imovel_destaque_text {
+    position: absolute;
+    bottom: 0;
+    /* Posiciona na base da imagem */
+    top: auto;
+    /* Reseta o 'top' */
+    left: 0;
+    right: 0;
+    transform: none;
+    /* Reseta a transformação */
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Distribui o espaço entre os itens */
+    align-items: center;
+    gap: 0;
+    /* Reseta o gap */
+    padding: 0.5em;
+    box-sizing: border-box;
+    /* Garante que o padding não quebre o layout */
+  }
+
+  .categoria_disponibilidade {
+    margin: 0;
+    width: auto;
+  }
+
+  .cat_imovel_destaque_text p {
+    padding: 0.5em;
+    font-size: 0.9rem;
+  }
 }
 
 
@@ -374,51 +448,59 @@ header img {
    Para Celulares (até 480px)
    - Refina o layout para telas pequenas, ajustando fontes e espaçamentos.
    -------------------------------------------------------------------------- */
+
 @media (max-width: 480px) {
-    .background_image {
-        min-height: 250px; /* Garante uma altura mínima para a imagem de fundo */
-    }
-    .background_image img {
-        /* Em telas muito pequenas, a imagem pode ser tratada como um background real */
-        object-fit: cover;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+  .background_image {
+    min-height: 250px;
+    /* Garante uma altura mínima para a imagem de fundo */
+  }
 
-    .image_buttons a {
-        padding: 0.8em 0;
-        font-size: 1em;
-    }
+  .background_image img {
+    /* Em telas muito pequenas, a imagem pode ser tratada como um background real */
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-    .cat_imovel {
-        width: 90%; /* Ocupa quase toda a largura da tela */
-    }
-    
-    .cat_imovel_text{
-        font-size: 4vw;
-    }
-    .cat_imovel_text h3{
-        font-size: 6vw;
-    }
+  .image_buttons a {
+    padding: 0.8em 0;
+    font-size: 1em;
+  }
 
-    .destaques h1 {
-        font-size: 1.5rem; /* Diminui ainda mais o título */
-        text-align: center;
-    }
-    
-    /* --- Footer --- */
-    .footer {
-        padding: 1.5rem;
-    }
+  .cat_imovel {
+    width: 90%;
+    /* Ocupa quase toda a largura da tela */
+  }
 
-    .footer ul {
-        text-align: center; /* Centraliza o texto da lista */
-    }
+  .cat_imovel_text {
+    font-size: 4vw;
+  }
 
-    .redes-sociais-footer {
-        flex-direction: column; /* Empilha o texto e os ícones */
-        gap: 0.8rem;
-    }
+  .cat_imovel_text h3 {
+    font-size: 6vw;
+  }
+
+  .destaques h1 {
+    font-size: 1.5rem;
+    /* Diminui ainda mais o título */
+    text-align: center;
+  }
+
+  /* --- Footer --- */
+  .footer {
+    padding: 1.5rem;
+  }
+
+  .footer ul {
+    text-align: center;
+    /* Centraliza o texto da lista */
+  }
+
+  .redes-sociais-footer {
+    flex-direction: column;
+    /* Empilha o texto e os ícones */
+    gap: 0.8rem;
+  }
 }
