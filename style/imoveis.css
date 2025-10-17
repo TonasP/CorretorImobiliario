@@ -107,7 +107,7 @@ header img{
 .div_cima {
     width: 100%;
     height: 30vw;
-    border: 2px solid red;
+    
     display: flex;
     text-align: center;
 }
@@ -130,15 +130,15 @@ header img{
 
 .menu {
     width: 100%;
-    height: 15em;
-    border: 2px rgb(0, 0, 0) solid;
-    margin-top: 0.5em;
+    height: 8em;
+    
+    margin-top: 1em;
 }
 
 .blocos{
     width: 80%;
     height: 6em;
-    /* border: 2px indigo solid; */
+    /* border: 1 indigo solid; */
     display: flex;
     gap: 20px;
     margin-top: 1em;
@@ -150,7 +150,7 @@ header img{
     text-align: left;
     width: 20%;
     height: 2em;
-    /* border: 2px rgb(55, 0, 255) solid; */
+    /* border: 1 rgb(55, 0, 255) solid; */
     margin-left: 20%;
 }
 
@@ -166,7 +166,7 @@ header img{
 .menu_baixo {
     width: 20%;
     height: 2em;
-    /* border: 2px brown solid; */
+    /* border: 1 brown solid; */
 }
 
 /*-------------------*/
@@ -174,7 +174,7 @@ header img{
 .label {
     width: 97%;
     height: 1em;
-    /* border: 2px yellow solid; */
+    /* border: 1 yellow solid; */
     text-align: left;
     font-size: 1vw;
     margin-bottom: 0.5em;
@@ -184,9 +184,9 @@ header img{
 select {
     width: 70%;
     height: 2em;
-    /* border: 2px seagreen solid; */
+    /* border: 1 seagreen solid; */
     font-size: 0.8vw;
-    border-radius: 20px;
+    
 
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -197,7 +197,7 @@ select {
 .select_cima {
     width: 15%;
     height: 5em;
-    /* border: 2px gray solid; */
+    /* border: 1 gray solid; */
     display: flex;
     
 
@@ -211,7 +211,7 @@ select {
 .texto_valor{
     height: 2em;
 
-        font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -222,7 +222,7 @@ select {
 .pesquisar{
     width: 15%;
     height: 5em;
-    /* border: 2px rgb(187, 255, 0) solid; */
+    /* border: 1 rgb(187, 255, 0) solid; */
     display: flex;
     /* background-color: black; */
 }
@@ -235,13 +235,123 @@ select {
     font-style: normal;
     /* color: rgb(0, 0, 0); */
     font-size: 1.5vw;
-    margin-top:8%;
+    margin-top:6%;
 }
 
 .luneta{
-    width: 20%;
-    height: 3em;
+    width: 15%;
+    height: 2em;
     margin-left: 3em;
     margin-top: 1em;
     color: white;
+}
+
+
+/*-----------------Menu dos hotéis-----------------*/
+
+.container-hoteis{
+    width: 90%;
+    height: 32em;
+    /* border: 2px rgb(0, 0, 0) solid; */
+    margin-left: 5%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hoteis{
+    width: 22%;
+    height: 32em;
+    /* border: 2px blue solid; */
+    display: block;
+    background-color: #D4BDAC;
+    
+}
+
+.img-hoteis{
+    height: 60%;
+    width: 100%;
+}
+
+.info1{
+    height: 12%;
+    width: 90%;
+    /* border: 1px hotpink solid; */
+    margin-top: -3px;
+    margin-left: 2%;
+}
+
+.info2{
+    height: 4%;
+    width: 100%;
+    /* border: 1px rgb(0, 255, 38) solid; */
+    margin-top: 5px;
+    display: flex;
+}
+
+.info3{
+    height: 10%;
+    width: 100%;
+    /* border: 1px rgb(255, 102, 0) solid; */
+   
+    display: flex;
+}
+
+.info4{
+    height: 10%;
+    width: 100%;
+    /* border: 1px rgb(255, 0, 0) solid; */
+   
+    display: flex;
+    
+}
+
+
+
+.sub-info1{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 0px;
+    font-size: 1vw;
+}
+
+.sub-info2{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -20px;
+    font-size: 1em;
+}
+
+.preco{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+    font-size: 1vw;
+    color: rgb(215, 123, 24);
+    margin-top: -5px;
+    margin-left: 0.5em;
+}
+
+.icones{
+    height: 65%;
+    margin-left: 0.5em;
+    margin-top: 3%;
+}
+
+.textos_hotel{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 3%;
+    font-size:1.2em;
+    margin-left: 3%;
+    
+    
 }
