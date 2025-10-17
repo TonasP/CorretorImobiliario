@@ -5,33 +5,34 @@
     font-family: "Inter", Arial, sans-serif;
 }
 
-header {
+html{
+    font-family: 'Open Sans';
+}
+header{
     display: flex;
     flex-direction: row;
     background-color: #047857;
 }
-
-header img {    
-    width: 15%;
+header img{
+    width: 10%;
     margin-left: 10%;
 }
-
-.links_header {
+.links_header{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4em;
-    margin-left: 8%;
+    margin-left: 13%;
+    font-weight: 600;
+    font-size: .9vw;
 }
-
-.links_header a {
+.links_header a{
     text-decoration: none;
     color: black;
     font-family: 'Open Sans';
-    font-weight: bold 700;
+    font-weight: 700;
 }
-
-#atual {
+#atual{
     background-color: #1e3a3a;
     border-radius: 4px;
     padding: .6em;
@@ -126,6 +127,11 @@ textarea:focus {
     margin-bottom: 1rem;
 }
 
+.form-contato h2 {
+    color: #047857;
+    margin-bottom: 1rem;
+}
+
 .info-contato ul {
     list-style: none;
     margin-bottom: 1.5rem;
@@ -158,7 +164,7 @@ textarea:focus {
 
 .mapa h2 {
     color: #047857;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 2rem;
 
 }
