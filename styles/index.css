@@ -18,6 +18,9 @@ header {
   display: flex;
   flex-direction: row;
   background-color: #047857;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 header img {
@@ -147,6 +150,7 @@ header img {
 }
 
 .cat_imovel_text a {
+  padding: 7%;
   text-decoration: none;
   color: #ffffff;
 }
@@ -553,7 +557,7 @@ header img {
 
 @media (max-width: 480px) {
   header {
-    z-index: 3;
+    z-index: 3;  
   }
 
   .hamburguer {
@@ -587,8 +591,8 @@ header img {
     right: 0;
     width: 100%;
     padding: 3% 0;
-    z-index: 999;
-    font-size: 3.5vw;
+    z-index: 998;
+    font-size: 4.5vw;
     
   }
 
@@ -604,7 +608,8 @@ header img {
   }
 
   .background_image {
-    min-height: 250px;
+    min-height: 400px;
+    z-index: 0;
     /* Garante uma altura mínima para a imagem de fundo */
   }
 
@@ -618,12 +623,17 @@ header img {
   }
 
   .image_buttons a {
-    padding: 0.8em 0;
+    margin: 5% 0;
+    padding: 0.8em 3em;
     font-size: 1em;
+    z-index: 0;
   }
-
+  .cards{
+    animation: none;
+  }
   .cat_imovel {
     width: 90%;
+    animation: anim-card-scale 1s ease 0s 1 normal forwards;
     /* Ocupa quase toda a largura da tela */
   }
 
@@ -656,4 +666,13 @@ header img {
     /* Empilha o texto e os ícones */
     gap: 0.8rem;
   }
+}
+@keyframes anim-card-scale {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
