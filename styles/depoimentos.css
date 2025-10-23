@@ -15,9 +15,12 @@ html {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    background-color: #047857;
+  display: flex;
+  flex-direction: row;
+  background-color: #047857;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 header img {
