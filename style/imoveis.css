@@ -554,3 +554,157 @@ select {
 @media(max-width: 425px){
 
 }
+
+
+
+@media (max-width: 425px) {
+
+  /* --- HEADER --- */
+  header img {
+    width: 45%;
+    margin-left: 4%;
+  }
+
+  .hamburguer {
+    font-size: 10vw;
+    margin-right: 8%;
+  }
+
+  .links_header {
+    font-size: 4vw;
+    margin-top: 40%;
+    padding: 5% 0;
+  }
+
+  /* --- TOPO / IMAGEM PRINCIPAL --- */
+  .div_cima {
+    height: 40vw;
+  }
+
+  .foto_cima {
+    height: 40vw;
+    object-fit: cover;
+  }
+
+  /* --- MENU DE FILTROS --- */
+  .menu {
+    height: auto;
+    margin-top: 2em;
+  }
+
+  .blocos {
+    width: 90%;
+    margin-left: 5%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .select_cima {
+    width: 100%;
+  }
+
+  .input,
+  select {
+    width: 90%;
+    font-size: 3.5vw;
+  }
+
+  .texto_valor {
+    width: 90%;
+    font-size: 3.5vw;
+  }
+
+  .label {
+    font-size: 3.5vw;
+  }
+
+  .pesquisar {
+    width: 60%;
+    height: 3em;
+    margin-top: 1em;
+  }
+
+  .pesquisa {
+    font-size: 1rem;
+  }
+
+  /* --- LISTA DE IMÓVEIS --- */
+  .container-hoteis {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 2em;
+    
+  }
+
+  .container-hoteis_cima{
+    margin-top: 20em;
+  }
+
+  .hoteis {
+    width: 90%;
+    height: auto;
+   
+  }
+
+  .img-hoteis {
+    height: 45vw;
+    object-fit: cover;
+    
+  }
+
+  .sub-info1 {
+    font-size: 4vw;
+  }
+
+  .sub-info2,
+  .textos_hotel,
+  .preco {
+    font-size: 3.5vw;
+  }
+
+  .icones {
+    height: 24px;
+  }
+
+  /* --- FOOTER --- */
+  .footer {
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
+
+  .footer img {
+    width: 130px;
+  }
+
+  .redes-sociais-footer h3 {
+    font-size: 0.9rem;
+  }
+
+  .redes-sociais-footer img {
+    width: 24px;
+    height: 24px;
+  }
+
+
+  /* ajuste do subtítulo (visível em telas pequenas) */
+.sub_titulo {
+  font-size: 4.5vw;      /* maior e proporcional à tela pequena */
+  text-align: center;    /* centraliza em layouts empilhados */
+  margin: 0.4em 0;       /* espaçamento vertical */
+  line-height: 1.1;      /* melhor leitura em linhas múltiplas */
+  color: #000;           /* garanta contraste (escolha outra cor se necessário) */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* se o subtítulo estiver sobre a imagem e precisar de destaque */
+.menu_cima {
+  text-align: center;
+  width: 100%;
+  margin-left: 0;        /* remove deslocamento lateral em mobile */
+  padding: 0.2em 1em;    /* evita que o texto encoste nas bordas */
+}
+}
+
