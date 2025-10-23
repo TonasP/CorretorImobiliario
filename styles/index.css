@@ -96,13 +96,18 @@ header img {
 }
 
 .cards {
+  display: flex;
+  flex-direction: column;
   animation: myAnim .6s linear 0s 1 normal none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
 }
 
 .categorias {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 1%;
   gap: 5%;
 }
 
@@ -557,7 +562,7 @@ header img {
 
 @media (max-width: 480px) {
   header {
-    z-index: 3;  
+    z-index: 3;
   }
 
   .hamburguer {
@@ -593,7 +598,7 @@ header img {
     padding: 3% 0;
     z-index: 998;
     font-size: 4.5vw;
-    
+
   }
 
   #menu_toggle:checked~.hamburguer {
@@ -628,9 +633,11 @@ header img {
     font-size: 1em;
     z-index: 0;
   }
-  .cards{
+
+  .cards {
     animation: none;
   }
+
   .cat_imovel {
     width: 90%;
     animation: anim-card-scale 1s ease 0s 1 normal forwards;
@@ -667,12 +674,13 @@ header img {
     gap: 0.8rem;
   }
 }
-@keyframes anim-card-scale {
-	0% {
-		transform: scale(0.5);
-	}
 
-	100% {
-		transform: scale(1);
-	}
+@keyframes anim-card-scale {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
