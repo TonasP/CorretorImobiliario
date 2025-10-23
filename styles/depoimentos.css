@@ -34,20 +34,20 @@ input {
 }
 
 .links_header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4em;
-    margin-left: 11%;
-    font-weight: 600;
-    font-size: .95vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+  margin-left: 13%;
+  font-weight: 600;
+  font-size: .9vw;
 }
 
 .links_header a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Open Sans';
-    font-weight: 700;
+  text-decoration: none;
+  color: black;
+  font-family: 'Open Sans';
+  font-weight: 700;
 }
 
 #atual {
