@@ -1,5 +1,7 @@
 /*Header*/
-
+body{
+  margin: 0;
+}
 .hamburguer,
 header input {
     display: none;
