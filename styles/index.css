@@ -475,7 +475,7 @@ header img {
     font-size: 4vw;
   }
 
-  .destaques h1 {
+  .destaques h2 {
     margin-bottom: 1rem;
     /* Adiciona um respiro abaixo do título */
     font-size: 1.8rem;
@@ -652,7 +652,7 @@ header img {
     font-size: 6vw;
   }
 
-  .destaques h1 {
+  .destaques h2 {
     font-size: 1.5rem;
     /* Diminui ainda mais o título */
     text-align: center;
