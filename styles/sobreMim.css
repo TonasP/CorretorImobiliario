@@ -155,19 +155,19 @@ header img {
   margin-bottom: 2em;
 }
 
-#membro {
+.membro {
   display: inline-block;
   text-align: center;
   margin: 1.2em;
 }
 
-#membro p {
+.membro p {
   margin-bottom: 1em;
   font-weight: 600;
   font-size: 1.2em;
 }
 
-#membro img {
+.membro img {
   width: 200px;
   height: 200px;
   object-fit: cover;
